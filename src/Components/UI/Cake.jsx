@@ -1,5 +1,6 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom'
+import Rating from './Rating'
 
  const Cake = ({img, cake}) => {
   
@@ -7,25 +8,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
   
     return (
     <div className="cake">
-                    <a href="">
+                    <Link to="/cakes/1">
                     <figure className="cake__img--wrapper">
                         <img src={img} alt="" />
                     </figure>
-                    </a>
+                    </Link>
                     <div className="cake__title">
-                        <a href="/" className="cake__title--link">
+                        <Link to="/" className="cake__title--link">
                          {cake.title}
-                        </a>
+                        </Link>
                     </div>
-                    <div className="cake__ratings">
-                        {
-                        new Array(Math.floor(cake.rating)).fill(0).map((_, index)=> <FontAwesomeIcon icon="star" key={index} />)
-                        }
-                        {
-                           !Number.isInteger(cake.rating)&& <FontAwesomeIcon icon="star-half-alt" />
-                        }
-                    </div>
-                   
+                    
+                   <Rating rating={cake.rating} />
                     <div className="cake__price">
                         {cake.salePrice?
                         (<><span className="cake__price--normal">${cake.cost}</span> ${cake.salePrice}</>): (<>${cake.cost}</>)
