@@ -6,7 +6,7 @@ const Explore = () => {
     <div className="container">
         <div className="row row__column">
             <h2>
-                Explore more  <span className="purple">Cakes</span>
+                Explore more <span className="purple">Cakes</span>
             </h2>
             <a href="/cakes">
             <button className='btn'>
