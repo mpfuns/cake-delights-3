@@ -2,11 +2,11 @@ import './index.css';
 //Comps
 import Nav from './Components/Nav';
 
-import dataSeller from "./data-seller"
-import dataLast from "./data-lastest"
 import Landing from './Components/Landing';
 import Highlights from './Components/Highlights';
 import Featured from './Components/Featured';
+import Discounted from './Components/Discounted';
+import  Explore  from './Components/Explore';
 
 
 function App() {
@@ -17,6 +17,8 @@ function App() {
       <Landing />
     <Highlights />
     <Featured />
+    <Discounted />
+    <Explore />
     
     </div>
   );

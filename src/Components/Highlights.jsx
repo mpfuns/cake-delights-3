@@ -4,7 +4,7 @@ import Highlight from './UI/Highlight'
 
 const Highlights = () => {
   return (
-    <section>
+    <section id='highlights'>
        <div className="container">
         <div className="row">
           <h2 className="section__title">
