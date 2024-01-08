@@ -13,7 +13,7 @@ const Featured = () => {
         <div className="container">
             <div className="row">
                 <h2 className="section__title">
-                    Featured  <span className="purple">Cakes</span>
+                    Featured  <span className="special-color">Cakes</span>
                 </h2>
                 <div className="cakes">
                   {cakes.filter(cake => cake.rating===5)
@@ -21,7 +21,6 @@ const Featured = () => {
                   .map((cake) =>(
                   <Cake 
                   key={cake.id}
-                  photo={cake.img} 
                   cake={cake}
 
                   />))}

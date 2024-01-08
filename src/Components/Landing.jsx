@@ -10,15 +10,17 @@ const Landing = () => {
                 <header>
                     <div className="header__container">
                         <div className="header__description">
-                            <h1>Welcome to Cake Delights, the ultimate destination for all your cake cravings in the USA.</h1>
-                            <h2>Our handcrafted cakes are the perfect addition to any celebration, and we take pride in being the best online cake shop.</h2>
+                            <h2>Welcome to <span className="special-color">Cake Delights</span> , the ultimate destination for all your cake cravings in the USA.</h2>
+                            <h3>Our handcrafted cakes are the perfect addition to any celebration, and we take pride in being the best online cake shop.</h3>
                             <Link to="#features">
-                                <button className="btn">Browswe cakes</button>
+                                <button className="btn">Browse cakes</button>
                             </Link>
                         </div>
+                        <div className="space">
                         <figure  className="header__img--wrapper">
                             <img src={undrawCake} alt="" />
                         </figure>
+                        </div>
                     </div>
                 </header>
 

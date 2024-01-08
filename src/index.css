@@ -22,7 +22,7 @@ body {
 }
 
 nav {
-  height: 80px;
+  height: 180px;
   display: flex;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
   background-color: white;
@@ -58,7 +58,7 @@ li {
 
 h1 {
   font-size: 56px;
-  color: #7342d6;
+  color: #9CFFD9;
   margin-bottom: 24px;
   text-align: center;
 }
@@ -78,7 +78,7 @@ button:active {
 }
 
 .btn {
-  background-color: #7342d6;
+  background-color: #9CFFD9;
   color: white;
   padding: 12px 24px;
   font-size: 20px;
@@ -86,8 +86,8 @@ button:active {
   border: none;
 }
 
-.purple {
-  color: #7342d6;
+.special-color{
+  color: #9CFFD9
 }
 
 .logo {
@@ -102,6 +102,7 @@ button:active {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  
 }
 
 .nav__link {
@@ -109,7 +110,7 @@ button:active {
   font-size: 20px;
   font-weight: bold;
   padding: 8px;
-  color: #7342d6;
+  color: #9CFFD9;
 }
 
 .nav__list {
@@ -124,7 +125,7 @@ button:active {
 }
 
 .nav__link--primary {
-  border: 2px solid #7342d6;
+  border: 2px solid #9CFFD9;
   border-radius: 4px;
 }
 
@@ -136,7 +137,7 @@ button:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #7342d6;
+  color: #9CFFD9;
   font-size: 20px;
   position: relative;
   margin-left: 8px;
@@ -162,7 +163,7 @@ button:active {
   background-color: transparent;
   font-size: 32px;
   border: none;
-  color: #7342d6;
+  color: #9CFFD9;
   display: none;
 }
 
@@ -225,7 +226,7 @@ LANDING
 */
 
 #landing {
-  background-color: rgba(115, 66, 214, 0.1)
+  background-color: #C57B57 
 }
 
 header {
@@ -246,8 +247,14 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  color: white;
+
 }
 
+.header__description >h3{
+  margin-bottom: 16px ;
+}
 .header__img--wrapper {
   padding: 20px;
 
@@ -258,6 +265,10 @@ header {
   /* Added this after the tutorial to 
   make landing page responsive on laptops */
   max-height: 50vh;
+  
+}
+.space{
+ margin-bottom: 20% ;
 }
 
 .container {
@@ -337,8 +348,8 @@ HIGHLIGHTS
 }
 
 .highlight__img {
-  border: 2px solid #7342d65d;
-  color: #7342d6;
+  border: 2px solid #6ed4ad   ;
+  color: #9CFFD9   ;
   width: 100px;
   height: 100px;
   display: flex;
@@ -363,7 +374,8 @@ FEATURES
 
 #features {
   padding-top: 8vw;
-  background-color: rgba(115, 66, 214, 0.1);
+  background-color: #C57B57; 
+  color: white;
 }
 
 .cakes {
@@ -454,7 +466,8 @@ EXPLORE
 */
 
 #explore {
-  background-color: rgba(115, 66, 214, 0.1);
+  background-color: #C57B57; 
+  color: white;
 }
 
 /* 
@@ -473,7 +486,7 @@ footer {
 
 .footer__logo--img {
   width: 160px;
-  filter: grayscale(1) invert(1);
+  filter: grayscale(1); 
 }
 
 .footer__link,
@@ -498,7 +511,7 @@ BOOKS PAGE
 */
 
 #cakes__body {
-  background-color: rgba(115, 66, 214, 0.1);
+  background-color: #C57B57 ;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -601,13 +614,13 @@ select {
   padding: 0 24px;
   margin-bottom: 8px;
   font-size: 32px;
-  color: #242424;
+  color: #9CFFD9;
   display: flex;
   align-items: center;
 }
 
 .cake__selected--link {
-  color: #242424;
+  color: #9CFFD9 ;
 }
 
 .fa-arrow-left {
@@ -652,7 +665,7 @@ select {
 */
 
 .cart__header {
-  background-color: #7342d6;
+  background-color: #9CFFD9 ;
   margin: 0 24px;
   padding: 8px 16px;
   color: white;
@@ -745,7 +758,7 @@ select {
 }
 
 .total__sub-total {
-  border-top: 2px solid #7342d6;
+  border-top: 2px solid #9CFFD9 ;
   padding-top: 24px;
 }
 
@@ -803,6 +816,9 @@ select {
   .cake__selected--description {
     width: 100%;
   }
+  .space{
+    margin-bottom: 10% ;
+   }
 }
 
 
@@ -830,4 +846,7 @@ select {
   .cart__cake--info {
     padding-left: 0;
   }
+  .space{
+    margin-bottom: 2% ;
+   }
 }

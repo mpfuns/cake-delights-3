@@ -35,7 +35,7 @@ console.log(cake.img)
                         <img src={`/${cake.img}`} alt="" className="cake__selcted--img" />
                       </figure>
                       <div className="cake__selected--description">
-                        <h2 className="ckae__slected--title">
+                        <h2 className="ckae__selected--title">
                           {cake.title}
                         </h2>
                          <Rating  rating={cake.rating}/>
@@ -78,7 +78,7 @@ console.log(cake.img)
                 cakes
                 .filter(cake => cake.rating=== 5 && +cake.id!== +id)
                 .slice(0,4)
-                .map(cake => <Cake  cake={cake} photo={cake.img} key={cake.id} />)
+                .map(cake => <Cake  cake={cake}  key={cake.id} />)
               }
               </div>
             </div>

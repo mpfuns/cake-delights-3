@@ -41,7 +41,6 @@ const Cakes = ({cakes: initialCakes}) => {
                             cakes.map(cake =>
                                 (<Cake  
                                     key={cake.id}
-                                    photo={cake.img}
                                     cake={cake}
                                     />))
                         }

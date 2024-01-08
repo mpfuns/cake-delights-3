@@ -13,10 +13,10 @@ const Footer = () => {
                 </figure>
             </Link>
             <div className="footer__list">
-                <a href="/" className='footer__link'>Home</a>
+                <Link to="/" className='footer__link'>Home</Link>
                 <span className="footer__link no-cursor">About</span>
-                 <a href="/cakes" className='footer__link'>Cakes</a>
-                 <a href="/cart" className='footer__link'>Cart</a>
+                 <Link to="/cakes" className='footer__link'>Cakes</Link>
+                 <Link to="/cart" className='footer__link'>Cart</Link>
             </div>
             <div className="footer__copyright">
                 Copyright &copy;2023 Cake Delights

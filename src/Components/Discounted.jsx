@@ -8,7 +8,7 @@ import Cake  from './UI/Cake'
     <div className="container">
         <div className="row">
             <h2 className="section__title">
-              Discount <span className="purple">Cakes</span>
+              Discount <span className="special-color">Cakes</span>
             </h2>
             <div className="cakes">
             {cakes.filter(cake => cake.salePrice>0)
@@ -16,7 +16,6 @@ import Cake  from './UI/Cake'
                   .map((cake) =>(
                   <Cake 
                   key={cake.id}
-                  photo={cake.img} 
                   cake={cake}
                 
                   />))}

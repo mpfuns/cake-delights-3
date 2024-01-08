@@ -4,14 +4,14 @@ import Rating from './Rating'
 import Price from './Price'
 import { useRef } from 'react'
 
- const Cake = ({cake, photo}) => {
+ const Cake = ({cake}) => {
    const [img, setImg]= useState()
   
  
 
   useEffect(()=>{
     const image= new Image();
-    image.src= `/${photo}`
+    image.src= `/${cake.img}`
     image.onload=()=>{
      
       setTimeout(() =>{
@@ -32,7 +32,7 @@ import { useRef } from 'react'
         <>
         <Link to={`/cakes/${cake.id}`}>
                     <figure className="cake__img--wrapper">
-                        <img src={`/${photo}`} alt="" />
+                        <img src={`/${cake.img}`} alt="" />
                     </figure>
                     </Link>
                     <div className="cake__title">
