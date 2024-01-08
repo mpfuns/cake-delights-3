@@ -16,7 +16,7 @@ import Cake  from './UI/Cake'
                   .map((cake) =>(
                   <Cake 
                   key={cake.id}
-                  img={cake.img} 
+                  photo={cake.img} 
                   cake={cake}
                 
                   />))}
